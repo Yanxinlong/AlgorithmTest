@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestOneViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -22,14 +23,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _dataArray = [NSMutableArray arrayWithObjects:@"", nil];
-
+    _dataArray = [NSMutableArray arrayWithObjects:@"二叉树转链表", nil];
+    [self.view addSubview:self.tableView];
 }
 
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         _tableView.delegate = self;
+        _tableView.dataSource = self;
         _tableView.rowHeight = 44;
     }
     
@@ -55,7 +57,8 @@
     switch (indexPath.row) {
         case 0:
         {
-            
+            TestOneViewController *oneVC = [[TestOneViewController alloc] init];
+            [self.navigationController pushViewController:oneVC animated:YES];
         }
             break;
             

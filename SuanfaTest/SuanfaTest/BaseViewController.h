@@ -1,5 +1,5 @@
 //
-//  TestOneViewController.h
+//  BaseViewController.h
 //  SuanfaTest
 //
 //  Created by qhzc-iMac-02 on 2017/12/5.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface TestOneViewController : BaseViewController
+@interface BaseViewController : UIViewController
 
 @end

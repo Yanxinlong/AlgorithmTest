@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F013C3971FD6732200F90AEE /* TestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F013C3961FD6732200F90AEE /* TestOneViewController.m */; };
+		F013C39A1FD6832E00F90AEE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F013C3991FD6832E00F90AEE /* BaseViewController.m */; };
 		F0C26CC91F1F5E41002861C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C26CC81F1F5E41002861C2 /* main.m */; };
 		F0C26CCC1F1F5E41002861C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C26CCB1F1F5E41002861C2 /* AppDelegate.m */; };
 		F0C26CCF1F1F5E41002861C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C26CCE1F1F5E41002861C2 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		F013C3951FD6732200F90AEE /* TestOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOneViewController.h; sourceTree = "<group>"; };
 		F013C3961FD6732200F90AEE /* TestOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOneViewController.m; sourceTree = "<group>"; };
+		F013C3981FD6832E00F90AEE /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F013C3991FD6832E00F90AEE /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		F0C26CC41F1F5E41002861C2 /* SuanfaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuanfaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C26CC81F1F5E41002861C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0C26CCA1F1F5E41002861C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				F0C26CCB1F1F5E41002861C2 /* AppDelegate.m */,
 				F0C26CCD1F1F5E41002861C2 /* ViewController.h */,
 				F0C26CCE1F1F5E41002861C2 /* ViewController.m */,
+				F013C3981FD6832E00F90AEE /* BaseViewController.h */,
+				F013C3991FD6832E00F90AEE /* BaseViewController.m */,
 				F0C26CD01F1F5E41002861C2 /* Main.storyboard */,
 				F0C26CD31F1F5E41002861C2 /* Assets.xcassets */,
 				F0C26CD51F1F5E41002861C2 /* LaunchScreen.storyboard */,
@@ -290,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C26CCF1F1F5E41002861C2 /* ViewController.m in Sources */,
+				F013C39A1FD6832E00F90AEE /* BaseViewController.m in Sources */,
 				F0C26CCC1F1F5E41002861C2 /* AppDelegate.m in Sources */,
 				F0C26CC91F1F5E41002861C2 /* main.m in Sources */,
 				F013C3971FD6732200F90AEE /* TestOneViewController.m in Sources */,
