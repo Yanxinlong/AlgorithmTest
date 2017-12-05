@@ -78,6 +78,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F013C3941FD66CE600F90AEE /* SuanFaGroup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SuanFaGroup;
+			sourceTree = "<group>";
+		};
 		F0C26CBB1F1F5E41002861C2 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +108,7 @@
 		F0C26CC61F1F5E41002861C2 /* SuanfaTest */ = {
 			isa = PBXGroup;
 			children = (
+				F013C3941FD66CE600F90AEE /* SuanFaGroup */,
 				F0C26CCA1F1F5E41002861C2 /* AppDelegate.h */,
 				F0C26CCB1F1F5E41002861C2 /* AppDelegate.m */,
 				F0C26CCD1F1F5E41002861C2 /* ViewController.h */,
@@ -516,6 +524,7 @@
 				F0C26CF31F1F5E41002861C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0C26CF41F1F5E41002861C2 /* Build configuration list for PBXNativeTarget "SuanfaTestTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +533,7 @@
 				F0C26CF61F1F5E41002861C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0C26CF71F1F5E41002861C2 /* Build configuration list for PBXNativeTarget "SuanfaTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +542,7 @@
 				F0C26CF91F1F5E41002861C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,strong) UITableView *tableView;
+
+@property (nonatomic,strong) NSMutableArray *dataArray;
 
 @end
 
@@ -18,72 +22,47 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 60)];
-    btn.backgroundColor = [UIColor redColor];
-    [btn addTarget:self action:@selector(cee) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-    
-    
-    NSInteger x = 3;
-    NSInteger y = 5;
-    
-    NSLog(@"%ld",x<<=1);
+    _dataArray = [NSMutableArray arrayWithObjects:@"", nil];
+
 }
 
-- (void)cee {
-    NSInteger a = 1;
-    NSInteger b = 4;
-    
-    NSInteger i = 0;
-    
-    NSMutableArray *aArray = [NSMutableArray array];
-    NSMutableArray *bArray = [NSMutableArray array];
-    
-    while (b > 0) {
-        
-        if (a>0) {
-            if (a%2 == 0) {
-                [aArray insertObject:@0 atIndex:0];
-            } else {
-                [aArray insertObject:@1 atIndex:0];
-            }
-            
-            if (b%2 == 0) {
-                [bArray insertObject:@0 atIndex:0];
-            } else {
-                [bArray insertObject:@1 atIndex:0];
-            }
-            
-            a = a/2;
-            b = b/2;
-
-        } else {
-            if (b%2 == 0) {
-                [bArray insertObject:@0 atIndex:0];
-            } else {
-                [bArray insertObject:@1 atIndex:0];
-            }
-            
-            b = b/2;
-            
-            [aArray insertObject:@0 atIndex:0];
-
-        }
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        _tableView.delegate = self;
+        _tableView.rowHeight = 44;
     }
     
-    NSLog(@"aArray = %@, bArray = %@",aArray,bArray);
-    
+    return _tableView;
+}
 
-    for (NSInteger n = 0 ; n < bArray.count;++n) {
-        if (aArray[n] != bArray[n]) {
-            ++i;
-        }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-
     
-    NSLog(@"%ld",i);
+    cell.textLabel.text = _dataArray[indexPath.row];
     
+    return cell;
+}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0:
+        {
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
 }
 
 
