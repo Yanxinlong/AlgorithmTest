@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _dataArray = [NSMutableArray arrayWithObjects:@"二叉树转链表", nil];
+    _dataArray = [NSMutableArray arrayWithObjects:@"把二元查找树转变成排序的双向链表", nil];
     [self.view addSubview:self.tableView];
 }
 

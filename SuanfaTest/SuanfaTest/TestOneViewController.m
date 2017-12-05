@@ -25,6 +25,7 @@
 
 
 #import "TestOneViewController.h"
+#import "BinaryTreeNode.h"
 
 @interface TestOneViewController ()
 
@@ -43,7 +44,6 @@ struct BSTreeNode {
     // Do any additional setup after loading the view.
     [self creatData];
 }
-
 
 - (void)creatData {
     

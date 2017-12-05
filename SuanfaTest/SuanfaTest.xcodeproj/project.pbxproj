@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F013C3971FD6732200F90AEE /* TestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F013C3961FD6732200F90AEE /* TestOneViewController.m */; };
 		F013C39A1FD6832E00F90AEE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F013C3991FD6832E00F90AEE /* BaseViewController.m */; };
+		F013C3A01FD6984200F90AEE /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F013C39F1FD6984200F90AEE /* BinaryTreeNode.m */; };
 		F0C26CC91F1F5E41002861C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C26CC81F1F5E41002861C2 /* main.m */; };
 		F0C26CCC1F1F5E41002861C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C26CCB1F1F5E41002861C2 /* AppDelegate.m */; };
 		F0C26CCF1F1F5E41002861C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C26CCE1F1F5E41002861C2 /* ViewController.m */; };
@@ -41,6 +42,9 @@
 		F013C3961FD6732200F90AEE /* TestOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOneViewController.m; sourceTree = "<group>"; };
 		F013C3981FD6832E00F90AEE /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F013C3991FD6832E00F90AEE /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F013C39C1FD68DB200F90AEE /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		F013C39E1FD6984200F90AEE /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
+		F013C39F1FD6984200F90AEE /* BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
 		F0C26CC41F1F5E41002861C2 /* SuanfaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuanfaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C26CC81F1F5E41002861C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0C26CCA1F1F5E41002861C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +97,23 @@
 			name = SuanFaGroup;
 			sourceTree = "<group>";
 		};
+		F013C39B1FD68DB200F90AEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F013C39C1FD68DB200F90AEE /* IOSurface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F013C39D1FD6982A00F90AEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F013C39E1FD6984200F90AEE /* BinaryTreeNode.h */,
+				F013C39F1FD6984200F90AEE /* BinaryTreeNode.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		F0C26CBB1F1F5E41002861C2 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +121,7 @@
 				F0C26CE01F1F5E41002861C2 /* SuanfaTestTests */,
 				F0C26CEB1F1F5E41002861C2 /* SuanfaTestUITests */,
 				F0C26CC51F1F5E41002861C2 /* Products */,
+				F013C39B1FD68DB200F90AEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +138,7 @@
 		F0C26CC61F1F5E41002861C2 /* SuanfaTest */ = {
 			isa = PBXGroup;
 			children = (
+				F013C39D1FD6982A00F90AEE /* Model */,
 				F013C3941FD66CE600F90AEE /* SuanFaGroup */,
 				F0C26CCA1F1F5E41002861C2 /* AppDelegate.h */,
 				F0C26CCB1F1F5E41002861C2 /* AppDelegate.m */,
@@ -298,6 +321,7 @@
 				F013C39A1FD6832E00F90AEE /* BaseViewController.m in Sources */,
 				F0C26CCC1F1F5E41002861C2 /* AppDelegate.m in Sources */,
 				F0C26CC91F1F5E41002861C2 /* main.m in Sources */,
+				F013C3A01FD6984200F90AEE /* BinaryTreeNode.m in Sources */,
 				F013C3971FD6732200F90AEE /* TestOneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
