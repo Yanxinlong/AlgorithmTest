@@ -31,12 +31,6 @@
 
 @end
 
-struct BSTreeNode {
-    int m_nValue;
-    struct BSTreeNode *m_pLeft;
-    struct BSTreeNode *m_pRight;
-};
-
 @implementation TestOneViewController
 
 - (void)viewDidLoad {
@@ -47,7 +41,49 @@ struct BSTreeNode {
 
 - (void)creatData {
     
+    BinaryTreeNode *newTree = [BinaryTreeNode createTreeWithValues:@[@10,@6,@14,@4,@8,@12,@16]];
     
+    NSMutableArray *orderArray = [NSMutableArray array];
+    
+    NSLog(@"111111");
+    [BinaryTreeNode inOrderTraverseTree:newTree handler:^(BinaryTreeNode *treeNode) {
+        [orderArray addObject:@(treeNode.value)];
+        NSLog(@"22222");
+
+    }];
+    
+    NSLog(@"33333");
+    NSLog(@"中序遍历结果：%@", [orderArray componentsJoinedByString:@","]);
+    
+}
+
+- (NSMutableArray *)inorderTraversalWithData:(NSMutableArray *)dataArray {
+    NSMutableArray *inorderArray = [NSMutableArray array];
+    //1.建立一个二叉树
+    
+    BinaryTreeNode *newTreeNode;
+    
+    for (NSNumber *number in dataArray) {
+        newTreeNode = [self addTreeNode:newTreeNode value:[number integerValue]];
+    }
+    
+    //2.中序遍历
+ 
+    return inorderArray;
+}
+
+- (BinaryTreeNode *)addTreeNode:(BinaryTreeNode *)node value:(NSInteger)value {
+    
+    if (!node) {
+        node = [[BinaryTreeNode alloc] init];
+        node.value = value;
+    } else if (node.value >= value) {
+        node.leftNode = [self addTreeNode:node.leftNode value:value];
+    } else {
+        node.rightNode = [self addTreeNode:node.rightNode value:value];
+    }
+    
+    return node;
 }
 
 - (void)didReceiveMemoryWarning {

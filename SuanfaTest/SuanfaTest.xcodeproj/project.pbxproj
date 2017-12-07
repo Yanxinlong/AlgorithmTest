@@ -18,6 +18,7 @@
 		F0C26CD71F1F5E41002861C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C26CD51F1F5E41002861C2 /* LaunchScreen.storyboard */; };
 		F0C26CE21F1F5E41002861C2 /* SuanfaTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C26CE11F1F5E41002861C2 /* SuanfaTestTests.m */; };
 		F0C26CED1F1F5E41002861C2 /* SuanfaTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C26CEC1F1F5E41002861C2 /* SuanfaTestUITests.m */; };
+		F0EE6B801FD8E08000C61497 /* TestSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EE6B7F1FD8E08000C61497 /* TestSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		F0C26CE81F1F5E41002861C2 /* SuanfaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuanfaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C26CEC1F1F5E41002861C2 /* SuanfaTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuanfaTestUITests.m; sourceTree = "<group>"; };
 		F0C26CEE1F1F5E41002861C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0EE6B7E1FD8E08000C61497 /* TestSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSecondViewController.h; sourceTree = "<group>"; };
+		F0EE6B7F1FD8E08000C61497 /* TestSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 			children = (
 				F013C3951FD6732200F90AEE /* TestOneViewController.h */,
 				F013C3961FD6732200F90AEE /* TestOneViewController.m */,
+				F0EE6B7E1FD8E08000C61497 /* TestSecondViewController.h */,
+				F0EE6B7F1FD8E08000C61497 /* TestSecondViewController.m */,
 			);
 			name = SuanFaGroup;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EE6B801FD8E08000C61497 /* TestSecondViewController.m in Sources */,
 				F0C26CCF1F1F5E41002861C2 /* ViewController.m in Sources */,
 				F013C39A1FD6832E00F90AEE /* BaseViewController.m in Sources */,
 				F0C26CCC1F1F5E41002861C2 /* AppDelegate.m in Sources */,
